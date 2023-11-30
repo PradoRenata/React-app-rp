@@ -1,5 +1,4 @@
-import logo from '../assets/dino.svg'
-import { Button } from "./button";
+import { Button } from './Button'
 
 export const NavBar = () => {
 
