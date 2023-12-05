@@ -8,7 +8,9 @@ function App() {
   return (
     <>
       <NavBar/>
-      <ItemListContainer greeting={"Bienvenido a DinoShop!"}/>
+      <ItemListContainer greeting={"Bienvenido a DinoShop!"}> 
+        <p>Aquí van los Productos</p>
+      </ItemListContainer>
     </>
   )
 }
