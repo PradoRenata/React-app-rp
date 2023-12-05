@@ -1,14 +1,14 @@
-import './App.css';
-import { Card } from './components/Card';
-import { NavBar } from "./components/NavBar";
- 
+import './App.css'
+// import { Card } from './components/Card'
+import ItemListContainer from './components/ItemListContainer/ItemListContainer'
+import { NavBar } from './components/Navbar/NavBar'
+
 function App() {
 
   return (
     <>
       <NavBar/>
-      <Card/>
-      <Card/>
+      <ItemListContainer greeting={"Bienvenido a DinoShop!"}/>
     </>
   )
 }
