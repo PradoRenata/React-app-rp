@@ -5,7 +5,8 @@ export const MOCK_DATA = [
         name: 'Cadena de unión',
         price: 13500,
         img: "https://www.iconshock.com/3D/perspective/png/thumbnails/chain-union-connected-fetters-shackles-perspective.webp",
-        description: `There are many variations of passages of Lorem Ipsum available.`
+        description: `There are many variations of passages of Lorem Ipsum available. There are many variations of passages of Lorem Ipsum available. Lorem ipsum dolor sit, amet consectetur adipiscing elit, eu dis.
+        Sodales dapibus vulputate augue senectus tortor, metus euismod maecenas dignissim.`
     },
     {
         id: 2,
@@ -13,7 +14,8 @@ export const MOCK_DATA = [
         name: 'Lámpara de pie',
         price: 23500,
         img: "https://www.iconshock.com/3D/perspective/png/thumbnails/lamp-light-bulb-lantern-lighthouse-perspective.webp",
-        description: `There are many variations of passages of Lorem Ipsum available.`
+        description: `There are many variations of passages of Lorem Ipsum available. Lorem ipsum dolor sit, amet consectetur adipiscing elit, eu dis.
+        Sodales dapibus vulputate augue senectus tortor, metus euismod maecenas dignissim.`
     },
     {
         id: 3,
@@ -21,7 +23,8 @@ export const MOCK_DATA = [
         name: 'Globo Corazón',
         price: 13500,
         img: "https://www.iconshock.com/3D/perspective/png/thumbnails/love-passion-affection-fondness-attachment-perspective.webp",
-        description: `There are many variations of passages of Lorem Ipsum available.`
+        description: `There are many variations of passages of Lorem Ipsum available. Lorem ipsum dolor sit, amet consectetur adipiscing elit, eu dis.
+        Sodales dapibus vulputate augue senectus tortor, metus euismod maecenas dignissim.`
     },
     {
         id: 4,
@@ -29,7 +32,8 @@ export const MOCK_DATA = [
         name: 'Cámara fotográfica',
         price: 24500,
         img: "https://www.iconshock.com/3D/perspective/png/thumbnails/camera-recorder-chamber-photography-perspective.webp",
-        description: `There are many variations of passages of Lorem Ipsum available.`
+        description: `There are many variations of passages of Lorem Ipsum available. Lorem ipsum dolor sit, amet consectetur adipiscing elit, eu dis.
+        Sodales dapibus vulputate augue senectus tortor, metus euismod maecenas dignissim.`
     },
     {
         id: 5,
@@ -37,7 +41,8 @@ export const MOCK_DATA = [
         name: 'Cubeta',
         price: 21500,
         img: "https://www.iconshock.com/3D/perspective/png/thumbnails/cube-bucket-pail-cuboid-perspective.webp",
-        description: `There are many variations of passages of Lorem Ipsum available.`
+        description: `There are many variations of passages of Lorem Ipsum available. Lorem ipsum dolor sit, amet consectetur adipiscing elit, eu dis.
+        Sodales dapibus vulputate augue senectus tortor, metus euismod maecenas dignissim.`
     },
     {
         id: 6,
@@ -45,7 +50,8 @@ export const MOCK_DATA = [
         name: 'Alien Extranjero',
         price: 21500,
         img: "https://www.iconshock.com/3D/general/png/thumbnails/alien-foreigner-extraterrestrial-otherworldly.webp",
-        description: `There are many variations of passages of Lorem Ipsum available.`
+        description: `There are many variations of passages of Lorem Ipsum available. Lorem ipsum dolor sit, amet consectetur adipiscing elit, eu dis.
+        Sodales dapibus vulputate augue senectus tortor, metus euismod maecenas dignissim.`
     },
     {
         id: 7,
@@ -53,7 +59,8 @@ export const MOCK_DATA = [
         name: 'Fruta peligrosa',
         price: 1200,
         img: "https://www.iconshock.com/3D/perspective/png/thumbnails/apple-fruit-rose_family-food-healthy-perspective.webp",
-        description: `There are many variations of passages of Lorem Ipsum available.`
+        description: `There are many variations of passages of Lorem Ipsum available. Lorem ipsum dolor sit, amet consectetur adipiscing elit, eu dis.
+        Sodales dapibus vulputate augue senectus tortor, metus euismod maecenas dignissim.`
     },
     {
         id: 8,
@@ -61,7 +68,8 @@ export const MOCK_DATA = [
         name: 'Batería de horno',
         price: 21500,
         img: "https://www.iconshock.com/3D/perspective/png/thumbnails/battery-pile-energy-power-perspective.webp",
-        description: `There are many variations of passages of Lorem Ipsum available.`
+        description: `There are many variations of passages of Lorem Ipsum available. Lorem ipsum dolor sit, amet consectetur adipiscing elit, eu dis.
+        Sodales dapibus vulputate augue senectus tortor, metus euismod maecenas dignissim.`
     },
     {
         id: 9,
@@ -69,7 +77,8 @@ export const MOCK_DATA = [
         name: 'Chinita bonita',
         price: 16000,
         img: "https://www.iconshock.com/3D/perspective/png/thumbnails/beetle-insect-winged_insect-coleopteran-perspective.webp",
-        description: `There are many variations of passages of Lorem Ipsum available.`
+        description: `There are many variations of passages of Lorem Ipsum available.There are many variations of passages of Lorem Ipsum available. Lorem ipsum dolor sit, amet consectetur adipiscing elit, eu dis.
+        Sodales dapibus vulputate augue senectus tortor, metus euismod maecenas dignissim.`
     },
     {
         id: 10,
@@ -77,7 +86,8 @@ export const MOCK_DATA = [
         name: 'Carpeta organizadora',
         price: 31500,
         img: "https://www.iconshock.com/3D/perspective/png/thumbnails/binder-holder-sheets-folder-portfolio-perspective.webp",
-        description: `There are many variations of passages of Lorem Ipsum available.`
+        description: `There are many variations of passages of Lorem Ipsum available.There are many variations of passages of Lorem Ipsum available. Lorem ipsum dolor sit, amet consectetur adipiscing elit, eu dis.
+        Sodales dapibus vulputate augue senectus tortor, metus euismod maecenas dignissim.`
     },
     {
         id: 11,
@@ -85,7 +95,8 @@ export const MOCK_DATA = [
         name: 'Campana colgante',
         price: 14000,
         img: "https://www.iconshock.com/3D/general/png/thumbnails/bell-bell_jar-bell_glass-campane-ring.webp",
-        description: `There are many variations of passages of Lorem Ipsum available.`
+        description: `There are many variations of passages of Lorem Ipsum available.There are many variations of passages of Lorem Ipsum available. Lorem ipsum dolor sit, amet consectetur adipiscing elit, eu dis.
+        Sodales dapibus vulputate augue senectus tortor, metus euismod maecenas dignissim.`
     },
     {
         id: 12,
@@ -93,7 +104,8 @@ export const MOCK_DATA = [
         name: 'Combo Hamburguesa',
         price: 10500,
         img: "https://www.iconshock.com/3D/perspective/png/thumbnails/burger-hamburger-fast_food-coke-patty-perspective.webp",
-        description: `There are many variations of passages of Lorem Ipsum available.`
+        description: `There are many variations of passages of Lorem Ipsum available.There are many variations of passages of Lorem Ipsum available. Lorem ipsum dolor sit, amet consectetur adipiscing elit, eu dis.
+        Sodales dapibus vulputate augue senectus tortor, metus euismod maecenas dignissim.`
     },
     {
         id: 13,
@@ -101,7 +113,8 @@ export const MOCK_DATA = [
         name: 'Cámara análoga',
         price: 41500,
         img: "https://www.iconshock.com/3D/perspective/png/thumbnails/camera-photography-photo-perspective.webp",
-        description: `There are many variations of passages of Lorem Ipsum available.`
+        description: `There are many variations of passages of Lorem Ipsum available. Lorem ipsum dolor sit, amet consectetur adipiscing elit, eu dis.
+        Sodales dapibus vulputate augue senectus tortor, metus euismod maecenas dignissim.`
     },
     {
         id: 14,
@@ -109,7 +122,8 @@ export const MOCK_DATA = [
         name: 'Taza para café',
         price: 8500,
         img: "https://www.iconshock.com/3D/perspective/png/thumbnails/cup-bowl-cuppa-cupful-glass-perspective.webp",
-        description: `There are many variations of passages of Lorem Ipsum available.`
+        description: `There are many variations of passages of Lorem Ipsum available.There are many variations of passages of Lorem Ipsum available. Lorem ipsum dolor sit, amet consectetur adipiscing elit, eu dis.
+        Sodales dapibus vulputate augue senectus tortor, metus euismod maecenas dignissim.`
     },
     {
         id: 15,
@@ -117,6 +131,7 @@ export const MOCK_DATA = [
         name: 'Audifonos inalámbricos',
         price: 13500,
         img: "https://www.iconshock.com/3D/perspective/png/thumbnails/headphones-headset-earphones-listening-music-perspective.webp",
-        description: `There are many variations of passages of Lorem Ipsum available.`
+        description: `There are many variations of passages of Lorem Ipsum are many variations of passages of Lorem Ipsum available. Lorem ipsum dolor sit, amet consectetur adipiscing elit, eu dis.
+        Sodales dapibus vulputate augue senectus tortor, metus euismod maecenas dignissim.`
     }
 ]

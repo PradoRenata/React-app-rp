@@ -31,9 +31,6 @@ const NavBar = () => {
                 
                         <Link key={link.href} to={link.href} className="text-white text-lg px-6 py-2 hover:text-blue-400"> {link.label} </Link>
                     ))}
-                    {/* <NavLink href={"#"} text={"Productos"}/>
-                    <NavLink href={"#"} text={"Categorias"}/>
-                    <NavLink href={"#"} text={"Compras"}/> */}
                 </nav>
                 <Cartwidget />
             </div>
