@@ -1,20 +1,27 @@
 import { useState, useEffect } from "react"
 import { pedirDatos } from "../../utils/utils"
 import ItemList from "../ItemList/ItemList"
+import { useParams } from "react-router-dom"
 
 const ItemListContainer = () => {
-    const [productos, setProdutos] = useState([])
+    const [productos, setProductos] = useState([])
     const [loading, setLoading] = useState(true)
 
-    useEffect(() => {
-        setLoading(true)
+    const { categoryId } = useParams()
 
-        pedirDatos()
-            .then((data) => {
-                setProdutos( data )
-                setLoading( false )
-            })
-    }, [])
+    useEffect(() => {
+      setLoading(true)
+
+      pedirDatos()
+          .then((data) => {
+              const items = categoryId 
+                              ? data.filter(prod => prod.category === categoryId)
+                              : data
+
+              setProductos(items)
+          })
+          .finally(() => setLoading( false ))
+    }, [categoryId])
 
     return (
         <>
@@ -24,11 +31,6 @@ const ItemListContainer = () => {
                     : <ItemList productos={productos}/>
             }
        </>
-
-        // <section className="container text-center mx-auto my-8 px-4 ">
-        //     <span className="text-4xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-cyan-500 to-blue-500">{greeting}</span>
-        //     {children}
-        // </section>
     )
 }
 

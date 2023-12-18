@@ -1,12 +1,10 @@
 import ItemCount from "../ItemCount/ItemCount";
-import { Link } from "react-router-dom";
 
-const ItemCard = ({item}) => {
+const ItemDetail = ({ item }) => {
 
     return (
-      <div className="bg-white relative max-w-sm rounded overflow-hidden shadow-md hover:shadow-2xl overflow-visible">
+      <div className="container m-auto mt-8">
         <img className="w-full" src={item.img} alt={item.name} />
-        <Link to={`/item/${item.id}`}>Ver más</Link>
         <div className="absolute top-4 -right-2">
           <p className="bg-blue-100 text-blue-800 text-xl font-semibold px-2.5 py-0.5 rounded">${item.price}</p>
         </div>
@@ -19,4 +17,5 @@ const ItemCard = ({item}) => {
     );
   };
   
-  export default ItemCard;
+  export default ItemDetail;
+  
