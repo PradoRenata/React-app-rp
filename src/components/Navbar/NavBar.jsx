@@ -1,5 +1,8 @@
 import Cartwidget from '../Cartwidget/Cartwidget'
 import { Link } from "react-router-dom";
+import Isotype from '../../assets/isotype.svg'
+import { Sun } from 'react-feather';
+
 
 const links = [
     {
@@ -23,17 +26,23 @@ const links = [
 const NavBar = () => {
 
     return (
-        <header className="m-2 bg-slate-900/90 backdrop-blur drop-shadow-2xl rounded-lg sticky top-1 z-50"> 
-            <div className="flex justify-between items-center px-6 py-2">
-                <a href="/" className="text-lg font-bold text-white font-bold">DinoShop</a>
-                <nav className="flex flex-row">
+        <header className="bg-white sticky top-0 z-50"> 
+            <div className="flex justify-between px-12 py-3">
+              <div className="flex gap-2">
+                <img src={ Isotype } alt="DinoTienda"/>
+                <a href="/" className="font-['Titan_One'] text-xl text-slate-900 leading-5 pt-2">Dino Tienda</a>
+              </div>
+              <div className='flex gap-4'>
+                 <button className='px-5 py-2 bg-slate-100 rounded-lg'><Sun color='#1F2937' size="24" /></button>
+                 <Cartwidget />
+                 <button className='px-5 py-2 border border-slate-200 rounded-lg text-slate-900 text-xl font-medium hover:text-blue-600'>Iniciar sesión</button>
+              </div>
+            </div>
+            <nav className="bg-gradient-to-r from-cyan-500 to-blue-500 flex flex-row justify-center">
                     {links.map((link) => (
-                
-                        <Link key={link.href} to={link.href} className="text-white text-lg px-6 py-2 hover:text-blue-400"> {link.label} </Link>
+                        <Link key={link.href} to={link.href} className="text-white text-xl font-medium px-5 py-3 border-b-4 border-transparent hover:border-b-4 hover:border-white"> {link.label} </Link>
                     ))}
                 </nav>
-                <Cartwidget />
-            </div>
         </header>
     )
 }

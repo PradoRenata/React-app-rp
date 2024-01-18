@@ -3,7 +3,7 @@ import { ShoppingCart } from 'react-feather';
 const Cartwidget = () => {
 
     return (
-        <button className="relative my-2 py-2 px-6 rounded-lg shadow-none text-lg text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-blue-500 hover:to-cyan-500"> <ShoppingCart color='white' size="20" /> <span className="bg-white px-2 rounded-full text-gray-900 absolute -top-2 -right-2 text-sm">0</span> </button>
+        <button className="relative px-5 py-3 border border-slate-200 rounded-lg"> <ShoppingCart color='#1F2937' size="24" /> <span className="bg-red-500 px-2 py-1 rounded-full text-white absolute -top-2 -right-2 text-xs">4</span> </button>
     )
 }
 
