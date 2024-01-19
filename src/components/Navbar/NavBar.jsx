@@ -6,7 +6,7 @@ import { Sun } from 'react-feather';
 
 const links = [
     {
-      label: "Inicio",
+      label: "Ver todo",
       href: "/",
     },
     {

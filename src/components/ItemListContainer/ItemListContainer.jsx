@@ -2,6 +2,7 @@ import { useState, useEffect } from "react"
 import { pedirDatos } from "../../utils/utils"
 import ItemList from "../ItemList/ItemList"
 import { useParams } from "react-router-dom"
+import CarouselSlider from "../CarouselSlider/CarouselSlider"
 
 const ItemListContainer = () => {
     const [productos, setProductos] = useState([])
@@ -25,6 +26,7 @@ const ItemListContainer = () => {
 
     return (
         <>
+            <CarouselSlider/>
             {
                 loading
                     ? <h2 className="text-center text-2xl mt-8">Cargando...</h2>
