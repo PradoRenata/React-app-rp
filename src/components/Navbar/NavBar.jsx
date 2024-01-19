@@ -10,16 +10,20 @@ const links = [
       href: "/",
     },
     {
-      label: "Oficina",
-      href: "/productos/oficina",
+      label: "Hogar",
+      href: "/productos/hogar",
     },
     {
       label: "Decoración",
       href: "/productos/decoracion",
     },
     {
-      label: "Tecnología",
-      href: "/productos/tecnologia",
+      label: "Accesorios",
+      href: "/productos/accesorios",
+    },
+    {
+      label: "Librería",
+      href: "/productos/libreria",
     },
   ];
 
