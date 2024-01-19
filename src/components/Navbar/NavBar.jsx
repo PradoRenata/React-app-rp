@@ -1,5 +1,5 @@
 import Cartwidget from '../Cartwidget/Cartwidget'
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import Isotype from '../../assets/isotype.svg'
 import { Sun } from 'react-feather';
 
@@ -29,6 +29,9 @@ const links = [
 
 const NavBar = () => {
 
+    const activeLink = "text-white px-5 pb-1 pt-2 border-b-4 border-white";
+    const defaultLink = "text-white px-5 pb-1 pt-2 border-b-4 border-transparent hover:border-white/50";
+
     return (
         <header className="bg-white sticky top-0 z-50"> 
             <div className="flex justify-between px-12 py-3">
@@ -44,7 +47,9 @@ const NavBar = () => {
             </div>
             <nav className="bg-gradient-to-r from-cyan-500 to-blue-500 flex flex-row justify-center">
                     {links.map((link) => (
-                        <Link key={link.href} to={link.href} className="text-white text- px-5 pb-3 pt-4 border-b-4 border-transparent hover:border-b-4 hover:border-white"> {link.label} </Link>
+                        <NavLink key={link.href} to={link.href} className=  {({ isActive }) =>
+                          isActive ? activeLink : defaultLink
+                       }> {link.label} </NavLink>
                     ))}
                 </nav>
         </header>
