@@ -1,13 +1,19 @@
 import ItemCount from "../ItemCount/ItemCount";
 import { ChevronLeft } from "react-feather";
+import { useNavigate } from "react-router-dom";
 
 const ItemDetail = ({ item }) => {
+
+    const navigate = useNavigate()
+    const handleBack = () => {
+      navigate(-1)
+    }
 
     return (
 
       <div className="container mx-auto">
         <div className="flex flex-row gap-2 justify-start mt-4">
-          <button className="flex gap-2 items-center text-slate-700"><ChevronLeft color='#1F2937' size="20" />Volver</button>
+          <button className="flex gap-2 items-center text-slate-700" onClick={handleBack}><ChevronLeft color='#1F2937' size="20" />Volver</button>
           <span className='px-4 text-slate-400'>|</span>
           <button className="text-blue-500">Ver más en ItemCategory</button>
         </div>
