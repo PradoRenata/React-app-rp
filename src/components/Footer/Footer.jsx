@@ -8,11 +8,11 @@ const Footer = () => {
                 <h6>Dino Tienda © 2023 React Project.<span className='px-4 text-slate-200'>|</span>Renata Prado</h6>
             </div>
             <div className='flex gap-2'>
-                <a href="https://github.com/PradoRenata/React-app-rp">
+                <a href="https://github.com/PradoRenata/React-app-rp" target='_blank'>
                     <button className='p-4 border border-slate-200 rounded-lg hover:bg-slate-100'><GitHub color='#1F2937' size="24" />
                     </button>
                 </a>
-                <a href="https://www.linkedin.com/in/pradov-renata/">
+                <a href="https://www.linkedin.com/in/pradov-renata/" target="_blank">
                     <button className='p-4 border border-slate-200 rounded-lg hover:bg-slate-100'><Linkedin color='#1F2937' size="24" />
                     </button>
                 </a>
