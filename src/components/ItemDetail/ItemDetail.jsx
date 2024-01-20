@@ -15,12 +15,12 @@ const ItemDetail = ({ item }) => {
           <img className="w-full object-cover" src={item.img} alt={item.name} />
           <div className="flex flex-col justify-between h-full border border-slate-200 rounded py-4 px-8 text-start">
             <div className="flex flex-col gap-4">
-              <p className="text-sm">Disponibles : ItemStock</p>
+              <p className="text-sm">Disponibles : {item.stock}</p>
               <h3 className="text-xl text-slate-950 font-semibold">{item.name}</h3>
               <p className="text-slate-800 text-sm font-light">{item.description}</p>
               <p className="text-xl text-slate-800">${item.price}</p>
             </div>
-            <ItemCount initial={1} stock={10} onAdd={(quantity) => console.log('Cantidad agregada', quantity)}/>
+            <ItemCount initial={1} stock={item.stock} onAdd={(quantity) => console.log('Cantidad agregada', quantity)}/>
           </div>
         </div>
       </div>
