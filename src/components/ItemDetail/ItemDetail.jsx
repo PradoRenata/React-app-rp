@@ -1,15 +1,25 @@
 import ItemCount from "../ItemCount/ItemCount";
+import { ChevronLeft } from "react-feather";
 
 const ItemDetail = ({ item }) => {
 
     return (
-      <div className="container text-center mx-auto my-8 px-4">
-        <div className="grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-4 place-items-center">
-          <img className="w-1/2 hover:scale-125 transition ease-in-out delay-150" src={item.img} alt={item.name} />
-          <div className="bg-white rounded py-6 text-start">
-            <h3 className="font-bold text-xl mb-2 px-6">{item.name}</h3>
-            <p className="text-gray-700 text-base py-3 px-6">{item.description}</p>
-            <p className="text-blue-800 font-semibold px-6">${item.price}</p>
+
+      <div className="container mx-auto">
+        <div className="flex flex-row gap-2 justify-start mt-4">
+          <button className="flex gap-2 items-center text-slate-700"><ChevronLeft color='#1F2937' size="20" />Volver</button>
+          <span className='px-4 text-slate-400'>|</span>
+          <button className="text-blue-500">Ver más en ItemCategory</button>
+        </div>
+        <div className="grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-4 bg-white my-4 p-6 rounded place-items-start">
+          <img className="w-full object-cover" src={item.img} alt={item.name} />
+          <div className="flex flex-col justify-between h-full border border-slate-200 rounded py-4 px-8 text-start">
+            <div className="flex flex-col gap-4">
+              <p className="text-sm">Disponibles : ItemStock</p>
+              <h3 className="text-xl text-slate-950 font-semibold">{item.name}</h3>
+              <p className="text-slate-800 text-sm font-light">{item.description}</p>
+              <p className="text-xl text-slate-800">${item.price}</p>
+            </div>
             <ItemCount initial={1} stock={10} onAdd={(quantity) => console.log('Cantidad agregada', quantity)}/>
           </div>
         </div>
