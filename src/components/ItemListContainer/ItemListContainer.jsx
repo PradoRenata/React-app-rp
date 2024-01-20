@@ -3,6 +3,7 @@ import { pedirDatos } from "../../utils/utils"
 import ItemList from "../ItemList/ItemList"
 import { useParams } from "react-router-dom"
 import CarouselSlider from "../CarouselSlider/CarouselSlider"
+import  Loader  from "../Loader/Loader"
 
 const ItemListContainer = () => {
     const [productos, setProductos] = useState([])
@@ -29,7 +30,7 @@ const ItemListContainer = () => {
             <CarouselSlider/>
             {
                 loading
-                    ? <h2 className="text-center text-2xl mt-8">Cargando...</h2>
+                    ? <Loader/>
                     : <ItemList productos={productos}/>
             }
        </>
