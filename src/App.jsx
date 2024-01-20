@@ -4,6 +4,7 @@ import ItemListContainer from './components/ItemListContainer/ItemListContainer'
 import NavBar from './components/Navbar/NavBar'
 import Footer from './components/Footer/Footer'
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom"
+import NotFound from './components/ErrorPages/NotFound'
 
 function App() {
 
@@ -16,7 +17,7 @@ function App() {
         <Route path="/productos/:categoryId" element={ <ItemListContainer /> } />
         <Route path="/item/:itemId" element={ <ItemDetailContainer /> } />
 
-        <Route path="/not-found" element={ <h2>Not found</h2> }/>
+        <Route path="/not-found" element={ <NotFound/> }/>
         <Route path="*" element={ <Navigate to={"/not-found"}/> }/>
       </Routes>
       
