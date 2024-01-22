@@ -1,14 +1,16 @@
 import { useContext } from "react";
 import { CartContext } from "../../Context/CartContext";
 import { UserContext } from "../../Context/UserContext";
-import ItemCount from "../ItemCount/ItemCount";
+import EmptyCart from "../EmptyStates/EmptyCart";
 
 const CartView = () => {
-    const { cart, totalCart, cleanCart, removeItem } = useContext(CartContext);
+    const { cart, totalCart, clearCart, removeItem } = useContext(CartContext);
     const { user } = useContext(UserContext);
 
+    if (cart.length === 0) return <EmptyCart />
+
     return (
-        <section className="flex flex-row my-8 mx-40 gap-4">
+        <section className="flex lg:flex-row sm:flex-col mt-8 mb-60 mx-40 gap-4">
             <div className="bg-white basis-3/4 p-8 rounded">
                 <div className="flex justify-between">
                     <h3 className="text-xl text-slate-950 font-semibold">Carro de compra</h3>
@@ -34,7 +36,7 @@ const CartView = () => {
                         </li>
                     ))}
                 </ul>
-                <button onClick={cleanCart} className="text-red-500 w-full">
+                <button onClick={ clearCart } className="text-red-500 w-full">
                     Vaciar carro
                 </button>
             </div>
