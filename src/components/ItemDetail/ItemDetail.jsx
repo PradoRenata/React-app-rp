@@ -1,10 +1,23 @@
 import ItemCount from "../ItemCount/ItemCount";
 import { ChevronLeft } from "react-feather";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { CartContext } from "../../Context/CartContext";
+import { useContext, useState } from "react";
 
 const ItemDetail = ({ item }) => {
-
     const navigate = useNavigate()
+    const [quantity, setQuantity] = useState(1)
+    const { addToCart , isInCart } = useContext(CartContext)
+
+    const handleAdd = () => {
+      const itemToCart = {
+        ...item,
+        quantity,
+      }
+
+      addToCart(itemToCart)
+    }
+
     const handleBack = () => {
       navigate(-1)
     }
@@ -26,7 +39,15 @@ const ItemDetail = ({ item }) => {
               <p className="text-slate-800 text-sm font-light">{item.description}</p>
               <p className="text-xl text-slate-800">${item.price}</p>
             </div>
-            <ItemCount initial={1} stock={item.stock} onAdd={(quantity) => console.log('Cantidad agregada', quantity)}/>
+            {
+              isInCart( item.id )
+              ? <button className="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-blue-800 focus:ring-2 focus:outline-none focus:ring-blue-300 rounded-md text-base px-5 py-3 text-center"><Link to="/cart">Terminar mi compra</Link></button>
+
+              : <>
+              <ItemCount quantity={quantity} stock={item.stock} setQuantity={ setQuantity}/>
+              <button onClick={handleAdd} disabled={item.stock === 0} className="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-blue-800 focus:ring-2 focus:outline-none focus:ring-blue-300 rounded-md text-base px-5 py-3 text-center" >Agregar al carro</button>
+              </>
+            }
           </div>
         </div>
       </div>
