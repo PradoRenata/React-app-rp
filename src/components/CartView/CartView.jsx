@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { CartContext } from "../../Context/CartContext";
 import { UserContext } from "../../Context/UserContext";
 import EmptyCart from "../EmptyStates/EmptyCart";
+import ItemCount from "../ItemCount/ItemCount";
 
 const CartView = () => {
     const { cart, totalCart, clearCart, removeItem } = useContext(CartContext);
@@ -21,15 +22,15 @@ const CartView = () => {
                         <li key={item.id} className="flex border border-slate-200 rounded p-4 gap-6 my-2">
                             <img src={item.img} alt="cart img" className="w-24 object-cover" />
                             <div className="flex flex-col w-full gap-2">
-                                <p className="text-sm">Disponibles : {item.stock}</p>
+                                <p className="text-xs">Disponibles : {item.stock}</p>
                                 <h5>{item.name}</h5>
                                 <div className="flex flex-row justify-between">
                                     <button onClick={() => removeItem(item.id)} className="text-blue-500">
                                         Eliminar
                                     </button>
                                     <div className="flex flex-row gap-4 items-center">
-                                        <p className="text-sm">Cantidad: {item.quantity}</p>
-                                        <p className="text-xl text-slate-800">${item.price * item.quantity}</p>
+                                        <p className="text-sm">{item.quantity} x</p>
+                                        <p className="text-xl text-slate-800">$ {item.price * item.quantity}</p>
                                     </div>
                                 </div>
                             </div>
@@ -45,7 +46,7 @@ const CartView = () => {
                 <div className="flex flex-col gap-2 text-sm">
                     <div className="flex flex-row justify-between">
                         <p>Productos </p>
-                        <p>${totalCart()}</p>
+                        <p>$ {totalCart()}</p>
                     </div>
                     <div className="flex flex-row justify-between">
                         <p>Envío </p>
@@ -54,9 +55,9 @@ const CartView = () => {
                     <hr />
                     <div className="flex flex-row justify-between">
                         <p className="font-semibold">Total </p>
-                        <p className="font-semibold">${totalCart()}</p>
+                        <p className="font-semibold">$ {totalCart()}</p>
                     </div>
-                    <button className="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-blue-800 focus:ring-2 focus:outline-none focus:ring-blue-300 rounded-md text-base px-5 py-3 text-center" >Ir al pago</button>
+                    <button className="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-blue-800 focus:ring-2 focus:outline-none focus:ring-blue-300 rounded-md text-base px-5 py-3 text-center mt-4" >Ir al pago</button>
                 </div>
             </div>
         </section>

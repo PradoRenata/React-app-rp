@@ -28,7 +28,7 @@ const ItemDetail = ({ item }) => {
         <div className="flex flex-row gap-2 justify-start mt-4">
           <button className="flex gap-2 items-center text-slate-700" onClick={handleBack}><ChevronLeft color='#1F2937' size="20" />Volver</button>
           <span className='px-4 text-slate-400'>|</span>
-          <button className="text-blue-500">Ver más en ItemCategory</button>
+          <p className="text-blue-500">Producto de {item.category}</p>
         </div>
         <div className="grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-4 bg-white my-4 p-6 rounded place-items-start">
           <img className="w-full object-cover" src={item.img} alt={item.name} />
