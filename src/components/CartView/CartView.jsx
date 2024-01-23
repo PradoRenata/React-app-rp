@@ -2,7 +2,6 @@ import { useContext } from "react";
 import { CartContext } from "../../Context/CartContext";
 import { UserContext } from "../../Context/UserContext";
 import EmptyCart from "../EmptyStates/EmptyCart";
-import ItemCount from "../ItemCount/ItemCount";
 
 const CartView = () => {
     const { cart, totalCart, clearCart, removeItem } = useContext(CartContext);
