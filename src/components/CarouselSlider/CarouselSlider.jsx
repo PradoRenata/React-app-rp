@@ -1,13 +1,12 @@
 import Carousel from "../Carousel/Carousel"
 
-
 const CarouselSlider = () => {
 
-    let slides = [
-        "https://mir-s3-cdn-cf.behance.net/54194af8a7dcc921906cd5e1d9d6de8c/fa2f4574-877a-4ead-accb-e724b9356ff9_rwc_134x0x2933x410x3200.png?h=0571eb988d6856ac7c4104c39b1766c6",
-        "https://mir-s3-cdn-cf.behance.net/54194af8a7dcc921906cd5e1d9d6de8c/fa2f4574-877a-4ead-accb-e724b9356ff9_rwc_134x0x2933x410x3200.png?h=0571eb988d6856ac7c4104c39b1766c6",
-        "https://mir-s3-cdn-cf.behance.net/54194af8a7dcc921906cd5e1d9d6de8c/fa2f4574-877a-4ead-accb-e724b9356ff9_rwc_134x0x2933x410x3200.png?h=0571eb988d6856ac7c4104c39b1766c6",
-        "https://mir-s3-cdn-cf.behance.net/54194af8a7dcc921906cd5e1d9d6de8c/fa2f4574-877a-4ead-accb-e724b9356ff9_rwc_134x0x2933x410x3200.png?h=0571eb988d6856ac7c4104c39b1766c6",
+    const slides = [
+        'https://lh3.googleusercontent.com/pw/ABLVV873gvBGeXYLUQ7AGFnLfsQQSgCj4ubQ6h7j-RSJsSm3q9VS5nNqt0mfPM3txidGfR2FA1i04KLmYqdHvCQiN5QvtJLL0qkrRXOkwl0u5STRdnCQXPj3DLvNWZB_2t4JMvt54T-frIvWBw6ygz--5WA=w1490-h335-s-no-gm?authuser=0',
+        'https://lh3.googleusercontent.com/pw/ABLVV873gvBGeXYLUQ7AGFnLfsQQSgCj4ubQ6h7j-RSJsSm3q9VS5nNqt0mfPM3txidGfR2FA1i04KLmYqdHvCQiN5QvtJLL0qkrRXOkwl0u5STRdnCQXPj3DLvNWZB_2t4JMvt54T-frIvWBw6ygz--5WA=w1490-h335-s-no-gm?authuser=0',
+        'https://lh3.googleusercontent.com/pw/ABLVV873gvBGeXYLUQ7AGFnLfsQQSgCj4ubQ6h7j-RSJsSm3q9VS5nNqt0mfPM3txidGfR2FA1i04KLmYqdHvCQiN5QvtJLL0qkrRXOkwl0u5STRdnCQXPj3DLvNWZB_2t4JMvt54T-frIvWBw6ygz--5WA=w1490-h335-s-no-gm?authuser=0',
+        'https://lh3.googleusercontent.com/pw/ABLVV873gvBGeXYLUQ7AGFnLfsQQSgCj4ubQ6h7j-RSJsSm3q9VS5nNqt0mfPM3txidGfR2FA1i04KLmYqdHvCQiN5QvtJLL0qkrRXOkwl0u5STRdnCQXPj3DLvNWZB_2t4JMvt54T-frIvWBw6ygz--5WA=w1490-h335-s-no-gm?authuser=0',
       ];
 
     return (
