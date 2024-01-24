@@ -8,6 +8,7 @@ import { UserProvider } from "./Context/UserContext";
 import Footer from "./components/Footer/Footer";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import NotFound from "./components/ErrorPages/NotFound";
+import Checkout from "./components/Checkout/Checkout";
 
 function App() {
     return (
@@ -21,6 +22,7 @@ function App() {
                         <Route path="/productos/:categoryId" element={<ItemListContainer />} />
                         <Route path="/item/:itemId" element={<ItemDetailContainer />} />
                         <Route path="/cart" element={<CartView/>} />
+                        <Route path="/checkout" element={<Checkout />}/>
                         <Route path="/not-found" element={<NotFound />} />
                         <Route path="*" element={<Navigate to={"/not-found"} />} />
                     </Routes>

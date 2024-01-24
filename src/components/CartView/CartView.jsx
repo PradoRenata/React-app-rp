@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { CartContext } from "../../Context/CartContext";
 import { UserContext } from "../../Context/UserContext";
 import EmptyCart from "../EmptyStates/EmptyCart";
+import { Link } from "react-router-dom";
 
 const CartView = () => {
     const { cart, totalCart, clearCart, removeItem } = useContext(CartContext);
@@ -11,7 +12,7 @@ const CartView = () => {
 
     return (
         <section className="flex lg:flex-row sm:flex-col mt-8 mb-60 mx-40 gap-4">
-            <div className="bg-white basis-3/4 p-8 rounded">
+            <div className="bg-white basis-3/4 p-4 rounded">
                 <div className="flex justify-between">
                     <h3 className="text-xl text-slate-950 font-semibold">Carro de compra</h3>
                     <p className="text-slate-800 text-sm font-light"> {user.email} </p>
@@ -56,7 +57,7 @@ const CartView = () => {
                         <p className="font-semibold">Total </p>
                         <p className="font-semibold">$ {totalCart()}</p>
                     </div>
-                    <button className="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-blue-800 focus:ring-2 focus:outline-none focus:ring-blue-300 rounded-md text-base px-5 py-3 text-center mt-4" >Ir al pago</button>
+                    <button className="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-blue-800 focus:ring-2 focus:outline-none focus:ring-blue-300 rounded-md text-base px-5 py-3 text-center mt-4" ><Link to="/checkout">Ir al pago</Link></button>
                 </div>
             </div>
         </section>
