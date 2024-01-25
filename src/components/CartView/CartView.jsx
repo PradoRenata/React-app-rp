@@ -11,7 +11,7 @@ const CartView = () => {
     if (cart.length === 0) return <EmptyCart />
 
     return (
-        <section className="flex lg:flex-row sm:flex-col mt-8 mb-60 mx-40 gap-4">
+        <section className="flex lg:flex-row sm:flex-col mt-8 mx-40 gap-4">
             <div className="bg-white basis-3/4 p-4 rounded">
                 <div className="flex justify-between">
                     <h3 className="text-xl text-slate-950 font-semibold">Carro de compra</h3>

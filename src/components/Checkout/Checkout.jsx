@@ -35,7 +35,6 @@ const Checkout = () => {
             date: new Date(),
 
         }
-        console.log(orden);
 
         const ordersRef = collection( db, "orders");
         addDoc(ordersRef, orden).then((doc) => {
@@ -46,7 +45,7 @@ const Checkout = () => {
 
     if (orderId) {
         return (
-            <section className="flex flex-col basis-3/4 px-8 py-12  bg-white rounded mt-8 mb-60 mx-40 items-center">
+            <section className="flex flex-col basis-3/4 px-8 py-12 bg-white rounded mt-8 mx-40 items-center">
                 <CheckCircle color='#22C55E' size="32" />
                 <h3 className="text-xl text-slate-950 font-semibold pb-4">¡Compra realizada con éxito!</h3>
                 <p className="text-slate-800 text-sm font-light">Tu código de compra es:</p>
@@ -56,7 +55,7 @@ const Checkout = () => {
     }
 
     return (
-        <section className="flex lg:flex-row sm:flex-col mt-8 mb-60 mx-40 gap-4">
+        <section className="flex lg:flex-row sm:flex-col mt-8 mx-40 gap-4">
             <div className="bg-white basis-3/4 p-4 rounded">
                 <h3 className="text-xl text-slate-950 font-semibold ">Datos de la compra</h3>
                 <p className="text-slate-800 text-sm font-light pb-6">Ingresa tus datos para realizar la compra</p>

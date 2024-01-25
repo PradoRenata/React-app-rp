@@ -15,8 +15,8 @@ function App() {
         <UserProvider>
             <CartProvider>
                 <BrowserRouter>
+                  <div className="flex flex-col min-h-screen">
                     <NavBar />
-
                     <Routes>
                         <Route path="/" element={<ItemListContainer />} />
                         <Route path="/productos/:categoryId" element={<ItemListContainer />} />
@@ -26,8 +26,8 @@ function App() {
                         <Route path="/not-found" element={<NotFound />} />
                         <Route path="*" element={<Navigate to={"/not-found"} />} />
                     </Routes>
-
-                    <Footer />
+                  </div>
+                  <Footer />
                 </BrowserRouter>
             </CartProvider>
         </UserProvider>

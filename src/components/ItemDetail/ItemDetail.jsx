@@ -43,10 +43,10 @@ const ItemDetail = ({ item }) => {
               isInCart( item.id )
               ? <button className="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-blue-800 focus:ring-2 focus:outline-none focus:ring-blue-300 rounded-md text-base px-5 py-3 text-center"><Link to="/cart">Terminar mi compra</Link></button>
 
-              : <>
+              : <div className="flex flex-col gap-4">
               <ItemCount quantity={quantity} stock={item.stock} setQuantity={ setQuantity}/>
               <button onClick={handleAdd} disabled={item.stock === 0} className="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-blue-800 focus:ring-2 focus:outline-none focus:ring-blue-300 rounded-md text-base px-5 py-3 text-center" >Agregar al carro</button>
-              </>
+              </div>
             }
           </div>
         </div>
